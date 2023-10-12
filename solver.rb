@@ -29,3 +29,15 @@ class Solver
       end
     end
   end
+
+# console tests
+
+solve = Solver.new
+facto = solve.factorial(6)
+puts facto
+
+test = solve.reverse('Mohamed')
+puts test
+
+Ns = solve.fizzbuzz(12)
+puts Ns
