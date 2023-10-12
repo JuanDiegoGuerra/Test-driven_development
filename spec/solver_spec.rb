@@ -28,5 +28,22 @@ describe Solver do
     result = @solver.reverse(1)
     expect(result).to eq('Argument cannot be an integer')
   end
-  
+
   # test for fizzbuzz method
+  it 'if n%3 = 0 return fizz' do
+    result = @solver.fizzbuzz(6)
+    expect(result).to eq('fizz')
+  end
+  it 'if n%5 = 0 return buzz' do
+    result = @solver.fizzbuzz(10)
+    expect(result).to eq('buzz')
+  end
+  it 'if n%5 = 0 & n%3 = 0 return fizzbuzz' do
+    result = @solver.fizzbuzz(60)
+    expect(result).to eq('fizzbuzz')
+  end
+  it 'if n%5 != 0 & n%3 != 0 return the number as string' do
+    result = @solver.fizzbuzz(14)
+    expect(result).to eq('14')
+  end
+end
