@@ -20,5 +20,13 @@ describe Solver do
   end
 
   # test for reverse method
-
+  it 'reverse the string Mohamed' do
+    result = @solver.reverse('Mohamed')
+    expect(result).to eq('demahoM')
+  end
+  it 'raise an exception if sent integer argument' do
+    result = @solver.reverse(1)
+    expect(result).to eq('Argument cannot be an integer')
+  end
+  
   # test for fizzbuzz method
